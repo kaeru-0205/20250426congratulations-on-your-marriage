@@ -38,7 +38,7 @@ h2 {
 @media (max-width: 768px) {
   h1 {
     font-size: 11vw; /* 小さい画面でのフォントサイズを拡大 */
-    margin: 40vh auto; /* セクション間を大幅に広げる */
+    margin: 40vh auto 20vh; /* セクション間を大幅に広げる */
   }
 
   h2 {
