@@ -49,18 +49,23 @@ h2 {
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 14vw; /* スマホでのフォントサイズを調整 */
-    margin: 20vh auto 5vh; /* 上部スペースを減らして、下部に少しスペースを追加 */
-    max-width: 90%; /* スマホ画面の幅に合わせて調整 */
-    padding: 0 10%; /* 左右に少し余白を加えて見切れを防ぐ */
+    font-size: 11vw; /* スマホでのフォントサイズをさらに拡大 */
+    margin: 40vh auto; /* 上部スペースを調整 */
+    max-width: 85%; /* スマホ画面の幅を調整 */
+    padding: 0 10%; /* 左右に余白を加えて見切れを防ぐ */
     text-align: center; /* 中央揃え */
+    margin-left: auto; /* 左側の余白を自動で調整 */
+    margin-right: auto; /* 右側の余白を自動で調整 */
   }
 
   h2 {
-    font-size: 12vw; /* スマホでのフォントサイズを調整 */
-    margin: 5vh auto; /* 上部スペースを減らして表示エリアに収める */
-    max-width: 90%; /* スマホ画面の幅に合わせて調整 */
-    padding: 0 10%; /* 左右に少し余白を加えて見切れを防ぐ */
+    font-size: 9vw; /* スマホでのフォントサイズをさらに拡大 */
+    margin: 20vh auto; /* 上部スペースを調整 */
+    max-width: 85%; /* スマホ画面の幅を調整 */
+    padding: 0 10%; /* 左右に余白を加えて見切れを防ぐ */
     text-align: center; /* 中央揃え */
+    margin-left: auto; /* 左側の余白を自動で調整 */
+    margin-right: auto; /* 右側の余白を自動で調整 */
   }
 }
+
