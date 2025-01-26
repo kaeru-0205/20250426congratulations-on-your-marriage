@@ -154,6 +154,9 @@
         t = clamp((enterTime - delay) * speed, 0., 1.);  
       }
       t = (fract(t * .99999) - 0.5) * dir + 0.5;      
+// 修正案：tが0~1の範囲内に収まるようにさらに調整
+if (t < 0) t = 0;
+if (t > 1) t = 1;
 
       for (float i = 0.; i < LAYERS; i++) {
         float s = cos(i) * 7.3 + 10.; 
@@ -181,7 +184,7 @@
       vfx.add(e, { 
         shader, 
         overflow: 30, 
-        intersection: { threshold: 0.99 },
+        intersection: { threshold: 0.8 },
         uniforms: {      
           mode: data.mode || 0,
           width: data.width || 0.2,
