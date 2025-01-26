@@ -181,11 +181,11 @@
       vfx.add(e, { 
         shader, 
         overflow: 30, 
-        intersection: { threshold: 0.99 },
+        intersection: { threshold: 0.5 },
         uniforms: {      
           mode: data.mode || 0,
           width: data.width || 0.2,
-          layers: data.layers || 3,
+          layers: data.layers || 5,
           speed: data.speed || 0.75, 
           delay: data.delay || 0,      
         }
