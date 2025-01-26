@@ -1,0 +1,68 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* 横スクロールを防ぐ */
+}
+
+body {
+  background: black;
+  text-align: center;
+}
+
+section {
+  padding: calc(50vh - 15vh) 0;
+}
+
+h1 {
+  height: auto; /* 高さを自動調整 */
+  max-width: 90%; /* 横幅を制限 */
+  white-space: nowrap; /* 改行を防ぐ */
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 8vw; /* ビューポート幅に応じたサイズ */
+  margin: 12vh auto; /* 上部スペースをさらに増やす */
+  display: block;
+}
+
+h2 {
+  color: white;
+  font-family: sans-serif;
+  font-size: 6vw; /* ビューポート幅に応じたサイズ */
+  margin: 3vh 0;
+  white-space: nowrap; /* 改行を防ぐ */
+  
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 11vw; /* 小さい画面でのフォントサイズを拡大 */
+    margin: 40vh auto; /* セクション間を大幅に広げる */
+  }
+
+  h2 {
+    font-size: 9vw; /* フォントサイズを拡大 */
+    margin: 25vh 0; /* テキスト間の空白を減らす */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 11vw; /* スマホでのフォントサイズをさらに拡大 */
+    margin: 40vh auto; /* 上部スペースを調整 */
+    max-width: 85%; /* スマホ画面の幅を調整 */
+    padding: 0 10%; /* 左右に余白を加えて見切れを防ぐ */
+    text-align: center; /* 中央揃え */
+  }
+
+  h2 {
+    font-size: 9vw; /* スマホでのフォントサイズをさらに拡大 */
+    margin: 20vh auto; /* 上部スペースを調整 */
+    max-width: 85%; /* スマホ画面の幅を調整 */
+    padding: 0 10%; /* 左右に余白を加えて見切れを防ぐ */
+    text-align: center; /* 中央揃え */
+    margin-left: auto; /* 左側の余白を自動で調整 */
+    margin-right: auto; /* 右側の余白を自動で調整 */
+  }
+}
